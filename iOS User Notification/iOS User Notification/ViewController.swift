@@ -15,3 +15,13 @@ class ViewController: UIViewController {
     }
 
 }
+
+// MARK: Outlet Action
+extension ViewController {
+    
+    @IBAction func onClickGoToSecondVC(_ sender: UIButton) {
+        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "InAppMessagingViewController") as? InAppMessagingViewController {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+}

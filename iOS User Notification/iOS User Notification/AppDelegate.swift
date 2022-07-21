@@ -6,11 +6,15 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseInAppMessaging
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure()
+        InAppMessaging.inAppMessaging().delegate = self
         return true
     }
 
@@ -24,4 +28,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        // Will be Implemeted Later
     }
 
+}
+
+// MARK: InAppMessagingDisplayDelegate
+extension AppDelegate : InAppMessagingDisplayDelegate {
+    
+    func messageClicked(_ inAppMessage: InAppMessagingDisplayMessage) {
+        print("Hello Message Clicked")
+    }
+    func messageDismissed(_ inAppMessage: InAppMessagingDisplayMessage,
+                          dismissType: FIRInAppMessagingDismissType) {
+        print("Message Dismissed!")
+    }
+    
+    func impressionDetected(for inAppMessage: InAppMessagingDisplayMessage) {
+        // ...
+        print("Impression Detected")
+    }
+    
+    func displayError(for inAppMessage: InAppMessagingDisplayMessage, error: Error) {
+        // ...
+        print("Display Error")
+    }
 }

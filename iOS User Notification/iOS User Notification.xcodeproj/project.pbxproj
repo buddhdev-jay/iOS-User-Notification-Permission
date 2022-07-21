@@ -13,10 +13,9 @@
 		FB0CDF942887D1380043D966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB0CDF922887D1380043D966 /* Main.storyboard */; };
 		FB0CDF962887D1390043D966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB0CDF952887D1390043D966 /* Assets.xcassets */; };
 		FB0CDF992887D1390043D966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB0CDF972887D1390043D966 /* LaunchScreen.storyboard */; };
-		FB0CDFA42887D13A0043D966 /* iOS_User_NotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0CDFA32887D13A0043D966 /* iOS_User_NotificationTests.swift */; };
-		FB0CDFAE2887D13A0043D966 /* iOS_User_NotificationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0CDFAD2887D13A0043D966 /* iOS_User_NotificationUITests.swift */; };
-		FB0CDFB02887D13A0043D966 /* iOS_User_NotificationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0CDFAF2887D13A0043D966 /* iOS_User_NotificationUITestsLaunchTests.swift */; };
 		FB0CDFBE2887D5330043D966 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = FB0CDFBD2887D5330043D966 /* FirebaseInAppMessaging-Beta */; };
+		FB5B2D80288926C5001CFD7A /* InAppMessagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5B2D7F288926C5001CFD7A /* InAppMessagingViewController.swift */; };
+		FB8542372887F9A2001A3067 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB8542362887F9A2001A3067 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,10 +45,9 @@
 		FB0CDF982887D1390043D966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB0CDF9A2887D1390043D966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB0CDF9F2887D13A0043D966 /* iOS User NotificationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS User NotificationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB0CDFA32887D13A0043D966 /* iOS_User_NotificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_User_NotificationTests.swift; sourceTree = "<group>"; };
 		FB0CDFA92887D13A0043D966 /* iOS User NotificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS User NotificationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB0CDFAD2887D13A0043D966 /* iOS_User_NotificationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_User_NotificationUITests.swift; sourceTree = "<group>"; };
-		FB0CDFAF2887D13A0043D966 /* iOS_User_NotificationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_User_NotificationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FB5B2D7F288926C5001CFD7A /* InAppMessagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppMessagingViewController.swift; sourceTree = "<group>"; };
+		FB8542362887F9A2001A3067 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				FB0CDF8B2887D1380043D966 /* iOS User Notification */,
-				FB0CDFA22887D13A0043D966 /* iOS User NotificationTests */,
-				FB0CDFAC2887D13A0043D966 /* iOS User NotificationUITests */,
 				FB0CDF8A2887D1380043D966 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,32 +97,17 @@
 		FB0CDF8B2887D1380043D966 /* iOS User Notification */ = {
 			isa = PBXGroup;
 			children = (
+				FB8542362887F9A2001A3067 /* GoogleService-Info.plist */,
 				FB0CDF8C2887D1380043D966 /* AppDelegate.swift */,
 				FB0CDF8E2887D1380043D966 /* SceneDelegate.swift */,
 				FB0CDF902887D1380043D966 /* ViewController.swift */,
 				FB0CDF922887D1380043D966 /* Main.storyboard */,
+				FB5B2D7F288926C5001CFD7A /* InAppMessagingViewController.swift */,
 				FB0CDF952887D1390043D966 /* Assets.xcassets */,
 				FB0CDF972887D1390043D966 /* LaunchScreen.storyboard */,
 				FB0CDF9A2887D1390043D966 /* Info.plist */,
 			);
 			path = "iOS User Notification";
-			sourceTree = "<group>";
-		};
-		FB0CDFA22887D13A0043D966 /* iOS User NotificationTests */ = {
-			isa = PBXGroup;
-			children = (
-				FB0CDFA32887D13A0043D966 /* iOS_User_NotificationTests.swift */,
-			);
-			path = "iOS User NotificationTests";
-			sourceTree = "<group>";
-		};
-		FB0CDFAC2887D13A0043D966 /* iOS User NotificationUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FB0CDFAD2887D13A0043D966 /* iOS_User_NotificationUITests.swift */,
-				FB0CDFAF2887D13A0043D966 /* iOS_User_NotificationUITestsLaunchTests.swift */,
-			);
-			path = "iOS User NotificationUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB0CDF992887D1390043D966 /* LaunchScreen.storyboard in Resources */,
+				FB8542372887F9A2001A3067 /* GoogleService-Info.plist in Resources */,
 				FB0CDF962887D1390043D966 /* Assets.xcassets in Resources */,
 				FB0CDF942887D1380043D966 /* Main.storyboard in Resources */,
 			);
@@ -266,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB5B2D80288926C5001CFD7A /* InAppMessagingViewController.swift in Sources */,
 				FB0CDF912887D1380043D966 /* ViewController.swift in Sources */,
 				FB0CDF8D2887D1380043D966 /* AppDelegate.swift in Sources */,
 				FB0CDF8F2887D1380043D966 /* SceneDelegate.swift in Sources */,
@@ -276,7 +259,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB0CDFA42887D13A0043D966 /* iOS_User_NotificationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +266,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB0CDFB02887D13A0043D966 /* iOS_User_NotificationUITestsLaunchTests.swift in Sources */,
-				FB0CDFAE2887D13A0043D966 /* iOS_User_NotificationUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +433,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -481,6 +462,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
